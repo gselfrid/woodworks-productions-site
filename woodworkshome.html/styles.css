@@ -1,0 +1,198 @@
+:root{
+    --yellow: #ffbb1c;
+    --org-red: #ff491c;
+    --dk-red: #870000;
+}
+
+.niconne-regular {
+    font-family: "Niconne", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rye-regular {
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--yellow), var(--org-red));
+    width: 100%;
+    padding: 2rem 0;
+    font-family: "Niconne", san-serif;
+}
+
+#headersect{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#woodtitle{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+h1{
+    font-size: 250%;
+    text-align: center;
+    margin: 0;
+}
+
+#woodtitle img{
+    width: 65%;
+    height: auto;
+    padding: 0 2rem;
+}
+
+#woodtitle a {
+    display: flex;
+    justify-content: center;
+}
+
+#woodtitle a{
+    text-decoration: none;
+    color: black;
+}
+
+#woodtitle a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+#woodtitle a:focus{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    padding: 1rem 0.5rem;
+    font-size: 150%;
+}
+
+nav a{
+    text-align: center;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+nav a:hover{
+    text-align: center;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color:  var(--org-red);
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+main{
+    background-color: var(--dk-red);
+}
+
+#currentshow{
+    color: white;
+}
+
+h2{
+    text-align: center;
+    font-size: 200%;
+    padding-top: 2rem;
+}
+
+#currentshow h2{
+    font-family: "Rye", serif;
+}
+
+#showgrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+#showgrid img{
+    width: 70%;
+    height: auto;
+    padding: 0 2rem;
+}
+
+#showgrid div{
+    text-align: center;
+}
+
+#showgrid a{
+    font-family: "Rye", serif;
+    text-decoration: none;
+    color: var(--dk-red);
+    background-color: var(--yellow);
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid var(--org-red);
+    border-radius: 30px;
+}
+
+#showgrid div a:hover{
+    font-family: "Rye", serif;
+    text-decoration: none;
+    color: var(--yellow);
+    background-color: var(--dk-red);
+    margin: 2rem;
+    padding: 1.25rem;
+    border: 1px solid var(--org-red);
+    border-radius: 50px;
+    transition: 300ms;
+}
+
+#aboutjackson {
+    overflow: auto;
+    background-color: var(--dk-red);
+}
+
+#aboutjackson h2{
+    color: white;
+    background-color: var(--dk-red);
+}
+
+#aboutjackson p{
+    color: white;
+    display: flex;
+    overflow: auto;
+    float: left;
+    width: 40%;
+    margin: 4rem;
+}
+
+#aboutjackson img{
+    display: flex;
+    overflow: auto;
+    float: right;
+    margin: 4rem;
+}
