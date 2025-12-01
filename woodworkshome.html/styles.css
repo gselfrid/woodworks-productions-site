@@ -126,6 +126,8 @@ h2{
 
 #currentshow h2{
     font-family: "Rye", serif;
+    color: white;
+    font-size:  200%;
 }
 
 #showgrid{
@@ -195,4 +197,33 @@ h2{
     overflow: auto;
     float: right;
     margin: 4rem;
+}
+
+h2{
+    font-family: "Niconne", serif;
+    font-size: 300%;
+    color:  var(--org-red);
+}
+
+h3{
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
+
+#tgwdlm{
+    background-color:  darkgreen;
+    border: 16px solid black;
+}
+
+#tgwdlm img{
+    display: block;
+    align-content: center;
+    margin: auto;
+    padding: 3rem;
+    width: 65%;
+}
+
+#tgwldm h3{
+    
 }
