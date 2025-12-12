@@ -217,6 +217,7 @@ h3{
     align-items: center;
     background-color:  darkgreen;
     border: 16px solid black;
+    padding-bottom: 12.91rem;
 }
 
 #tgwdlm h1{
@@ -233,13 +234,19 @@ h3{
 #tgwdlm img{
     width: 70%;
     margin: auto;
-    padding: 3rem;
+    border: solid black 5px;
 }
 
 #tgwdlm h3{
     margin: 0;
     font-size: 250%;
     font-family: Creepster, system-ui;
+}
+
+#tgwdlm a{
+    border: solid black 5px;
+    padding: 1rem 2rem;
+    border-radius: 100px
 }
 
 #h2tg h2{
