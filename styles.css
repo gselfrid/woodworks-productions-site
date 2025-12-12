@@ -212,18 +212,73 @@ h3{
 }
 
 #tgwdlm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     background-color:  darkgreen;
     border: 16px solid black;
 }
 
-#tgwdlm img{
+#tgwdlm h1{
+    grid-column: 1/-1;
+    font-family: "Creepster", system-ui;
+    color: white;
+    font-size: 350%;
     display: block;
     align-content: center;
     margin: auto;
     padding: 3rem;
-    width: 65%;
 }
 
-#tgwldm h3{
-    
+#tgwdlm img{
+    width: 70%;
+    margin: auto;
+    padding: 3rem;
+}
+
+#tgwdlm h3{
+    margin: 0;
+    font-size: 250%;
+    font-family: Creepster, system-ui;
+}
+
+#h2tg h2{
+    text-align: left;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+#h2tg a{
+    text-decoration: none;
+    color: black;
+    border: dashed white 3px;
+}
+
+#h2tg a:hover{
+    text-decoration: none;
+    color: white;
+    border: dashed white 3px;
+    background-color: var(--org-red)
+}
+
+#tgwdlm a{
+    text-decoration: none;
+    color: white;
+}
+
+#tgwdlmpics{
+    background-color:  darkgreen;
+    border: 16px solid black;
+}
+
+#tgwdlmpics{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#tgwdlmpics img{
+   width: 90%;
+   margin: 1rem;
+   border: solid black 10px;
 }
