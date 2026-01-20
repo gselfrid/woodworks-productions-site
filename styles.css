@@ -387,3 +387,40 @@ footer{
     padding: 2rem 0;
     font-family: "Niconne", san-seriffire
 }
+
+#woodfooter{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+#woodfooter img{
+    width: 65%;
+    height: auto;
+    padding: 0 2rem;
+}
+
+#woodfooter a {
+    display: flex;
+    justify-content: center;
+}
+
+#woodfooter a{
+    text-decoration: none;
+    color: black;
+}
+
+#woodfooter a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+#woodfooter a:focus{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
