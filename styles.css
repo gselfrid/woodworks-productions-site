@@ -385,7 +385,7 @@ footer{
     background-image: linear-gradient(to top, var(--yellow), var(--org-red));
     width: 100%;
     padding: 2rem 0;
-    font-family: "Niconne", san-seriffire
+    font-family: "Niconne", san-serif;
 }
 
 #woodfooter{
