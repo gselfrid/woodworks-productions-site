@@ -2,6 +2,7 @@
     --yellow: #ffbb1c;
     --org-red: #ff491c;
     --dk-red: #870000;
+    --magenta: #d86be6;
 }
 
 .niconne-regular {
@@ -125,9 +126,9 @@ h2{
 }
 
 #currentshow h2{
-    font-family: "Rye", serif;
+    font-family: "Niconne", serif;
     color: white;
-    font-size:  200%;
+    font-size:  300%;
 }
 
 #showgrid{
@@ -211,13 +212,19 @@ h3{
     padding: 3rem;
 }
 
+h4{
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
+
 #tgwdlm{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     background-color:  darkgreen;
     border: 16px solid black;
-    padding-bottom: 12.91rem;
+    padding-bottom: 12.5rem;
 }
 
 #tgwdlm h1{
@@ -227,12 +234,12 @@ h3{
     font-size: 350%;
     display: block;
     align-content: center;
-    margin: auto;
+    margin: 0 auto;
     padding: 3rem;
 }
 
 #tgwdlm img{
-    width: 70%;
+    width: 50%;
     margin: auto;
     border: solid black 5px;
 }
@@ -269,6 +276,19 @@ h3{
     background-color: var(--org-red)
 }
 
+#tgwdlmpg h1{
+    background-color:  darkgreen;
+    border: 16px solid black;
+    grid-column: 1/-1;
+    font-family: "Creepster", system-ui;
+    color: white;
+    font-size: 350%;
+    display: block;
+    align-content: center;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
 #tgwdlm a{
     text-decoration: none;
     color: white;
@@ -288,4 +308,82 @@ h3{
    width: 90%;
    margin: 1rem;
    border: solid black 10px;
+}
+
+#tto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color:  var(--magenta);
+    border: 16px solid black;
+    padding-bottom: 12.91rem;
+}
+
+#tto h1{
+    grid-column: 1/-1;
+    font-family: "Rye", sans-serif;
+    color: white;
+    font-size: 350%;
+    display: block;
+    align-content: center;
+    margin-bottom: -50px;
+    margin: auto;
+    padding: 3rem;
+}
+
+#ttopg h1{
+    background-color:  var(--magenta);
+    border: 16px solid black;
+    grid-column: 1/-1;
+    font-family: "Rye", sans-serif;
+    color: white;
+    font-size: 350%;
+    display: block;
+    align-content: center;
+    margin-bottom: -50px;
+    margin: auto;
+    padding: 3rem;
+}
+
+#tto img{
+    width: 50%;
+    margin: auto;
+    border: solid black 5px;
+}
+
+#tto h3{
+    margin: 0;
+    font-size: 250%;
+    font-family: "Rye", sans-serif;
+}
+
+#tto a{
+    text-decoration: none;
+    color: white;
+    border: solid black 5px;
+    padding: 1rem 2rem;
+    border-radius: 100px
+}
+
+#ttopics{
+    background-color:  var(--magenta);
+    border: 16px solid black;
+}
+
+#ttopics{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#ttopics img{
+   width: 90%;
+   margin: 1rem;
+   border: solid black 10px;
+}
+
+footer{
+    background-image: linear-gradient(to top, var(--yellow), var(--org-red));
+    width: 100%;
+    padding: 2rem 0;
+    font-family: "Niconne", san-seriffire
 }
