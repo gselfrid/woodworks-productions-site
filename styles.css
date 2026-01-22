@@ -47,6 +47,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
+    justify-items: center;
     max-width: 1200px;
     margin: 0 auto;
     gap: 1rem;
@@ -61,7 +62,6 @@ h1{
 #woodtitle img{
     width: 65%;
     height: auto;
-    padding: 0 2rem;
 }
 
 #woodtitle a {
@@ -138,6 +138,7 @@ h2{
     font-family: "Niconne", serif;
     color: white;
     font-size:  300%;
+    text-align: center;
 }
 
 #showgrid{
@@ -145,6 +146,7 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    justify-items: center;
     max-width: 1200px;
     margin: 0 auto;
     gap: 1rem;
@@ -153,7 +155,6 @@ h2{
 #showgrid img{
     width: 70%;
     height: auto;
-    padding: 0 2rem;
 }
 
 #showgrid div{
@@ -186,6 +187,7 @@ h2{
 #aboutjackson {
     overflow: auto;
     background-color: var(--dk-red);
+    justify-items: center;
 }
 
 #aboutjackson h2{
@@ -199,14 +201,15 @@ h2{
     overflow: auto;
     float: left;
     width: 40%;
-    margin: 4rem;
+    margin: 2rem;
 }
 
 #aboutjackson img{
+    justify-items: center;
     display: flex;
     overflow: auto;
     float: right;
-    margin: 4rem;
+    margin: 2rem;
 }
 
 h2{
@@ -232,7 +235,6 @@ h4{
     background-image: url("tgwdlmposter50.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-attachment: fixed;
     background-position: center;
     background-color:  darkgreen;
     border: 16px solid darkgreen;
@@ -315,7 +317,6 @@ h4{
     background-image: url("ttoposter50.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-attachment: fixed;
     background-position: center;
     background-color:  var(--magenta);
     border: 16px solid var(--magenta);
@@ -384,6 +385,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
+    justify-items: center;
     max-width: 1200px;
     margin: 0 auto;
     gap: 1rem;
@@ -392,7 +394,6 @@ footer{
 #woodfooter img{
     width: 65%;
     height: auto;
-    padding: 0 2rem;
 }
 
 #woodfooter a {
