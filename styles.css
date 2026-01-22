@@ -17,6 +17,15 @@
     font-style: normal;
 }
 
+html, 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
 body{
     margin: 0;
 }
@@ -219,42 +228,29 @@ h4{
 }
 
 #tgwdlm{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
+    background-image: url("tgwdlmposter50.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
     background-color:  darkgreen;
-    border: 16px solid black;
-    padding-bottom: 12.5rem;
+    border: 16px solid darkgreen;
 }
 
-#tgwdlm h1{
-    grid-column: 1/-1;
-    font-family: "Creepster", system-ui;
-    color: white;
-    font-size: 350%;
-    display: block;
-    align-content: center;
-    margin: 0 auto;
-    padding: 3rem;
-}
 
-#tgwdlm img{
-    width: 50%;
-    margin: auto;
-    border: solid black 5px;
-}
+
 
 #tgwdlm h3{
-    margin: 0;
-    font-size: 250%;
+    margin: 5rem;
+    align-content: center;
+    border: dashed black 5px;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    background-color: darkgreen;
     font-family: Creepster, system-ui;
 }
 
-#tgwdlm a{
-    border: solid black 5px;
-    padding: 1rem 2rem;
-    border-radius: 100px
-}
 
 #h2tg h2{
     text-align: left;
@@ -278,7 +274,6 @@ h4{
 
 #tgwdlmpg h1{
     background-color:  darkgreen;
-    border: 16px solid black;
     grid-column: 1/-1;
     font-family: "Creepster", system-ui;
     color: white;
@@ -287,6 +282,8 @@ h4{
     align-content: center;
     margin: 0 auto;
     padding: 3rem;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
 }
 
 #tgwdlm a{
@@ -296,7 +293,11 @@ h4{
 
 #tgwdlmpics{
     background-color:  darkgreen;
-    border: 16px solid black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    
 }
 
 #tgwdlmpics{
@@ -305,69 +306,60 @@ h4{
 }
 
 #tgwdlmpics img{
-   width: 90%;
-   margin: 1rem;
-   border: solid black 10px;
+    width: 100%;
+    border: solid darkgreen 5px;
 }
 
 #tto{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
+    background-image: url("ttoposter50.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
     background-color:  var(--magenta);
-    border: 16px solid black;
-    padding-bottom: 12.91rem;
+    border: 16px solid var(--magenta);
 }
 
-#tto h1{
-    grid-column: 1/-1;
-    font-family: "Rye", sans-serif;
-    color: white;
-    font-size: 350%;
-    display: block;
-    align-content: center;
-    margin-bottom: -50px;
-    margin: auto;
-    padding: 3rem;
-}
 
 #ttopg h1{
     background-color:  var(--magenta);
-    border: 16px solid black;
     grid-column: 1/-1;
     font-family: "Rye", sans-serif;
     color: white;
-    font-size: 350%;
+    font-size: 200%;
     display: block;
     align-content: center;
     margin-bottom: -50px;
     margin: auto;
-    padding: 3rem;
+    padding: 2rem;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
 }
 
-#tto img{
-    width: 50%;
-    margin: auto;
-    border: solid black 5px;
-}
 
 #tto h3{
-    margin: 0;
-    font-size: 250%;
+    margin: 5rem;
+    align-content: center;
     font-family: "Rye", sans-serif;
+    border: dashed black 5px;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    background-color: var(--magenta);
+    opacity: 100%;
 }
 
 #tto a{
     text-decoration: none;
     color: white;
-    border: solid black 5px;
-    padding: 1rem 2rem;
-    border-radius: 100px
 }
 
 #ttopics{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color:  var(--magenta);
-    border: 16px solid black;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
 }
 
 #ttopics{
@@ -376,9 +368,8 @@ h4{
 }
 
 #ttopics img{
-   width: 90%;
-   margin: 1rem;
-   border: solid black 10px;
+   width: 100%;
+   border: solid var(--magenta) 5px;
 }
 
 footer{
