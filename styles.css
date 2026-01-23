@@ -278,7 +278,43 @@ h3{
 h4{
     color: white;
     text-align: center;
-    padding: 3rem;
+    padding: 1rem;
+}
+
+#creators{
+    background-color: black;
+    border-top: solid 10px white;
+    border-bottom: solid 10px white;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#creators iframe{
+    width: 70%;
+    justify-items: center;
+    padding-bottom: 3rem;
+}
+
+#creators h3{
+    font-family: "Niconne", sans-serif;
+    font-size: 200%;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#creators a{
+    display: block;
+    width: fit-content;      
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--yellow);
+    color: var(--dk-red);
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--org-red);
+    border-radius: 50px;
 }
 
 #tgwdlm{
