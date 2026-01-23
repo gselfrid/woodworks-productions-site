@@ -239,6 +239,12 @@ h2{
     border: solid 10px var(--org-red);
 }
 
+#gwencred p{
+    text-align: center;
+    color: white;
+    font-family: serif;
+}
+
 h2{
     font-family: "Niconne", serif;
     font-size: 300%;
