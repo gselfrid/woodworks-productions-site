@@ -232,6 +232,8 @@ h2{
     overflow: auto;
     width: 70%;
     margin: 2rem;
+    border-radius: 50%;
+    border: solid 10px var(--org-red);
 }
 
 h2{
