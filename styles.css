@@ -194,6 +194,9 @@ h2{
     #aboutjackson img {
         width: 70%;
         margin: 0 auto;
+        border-radius: 50%;
+        border: solid 10px var(--org-red);
+        justify-items: center;
     }
 
     #aboutjackson div {
