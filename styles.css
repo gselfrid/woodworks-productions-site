@@ -184,7 +184,30 @@ h2{
     transition: 300ms;
 }
 
+@media (max-width: 768px) {
+    #aboutjackson {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+        gap: 1.5rem;
+    }
+
+    #aboutjackson img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #aboutjackson div {
+        width: 100%;
+    }
+}
+
 #aboutjackson {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;                 
+    padding: 3rem 2rem;        
+    max-width: 1100px;        
+    margin: 0 auto; 
     overflow: auto;
     background-color: var(--dk-red);
     justify-items: center;
@@ -197,18 +220,17 @@ h2{
 
 #aboutjackson p{
     color: white;
-    display: flex;
     overflow: auto;
-    float: left;
-    width: 40%;
+    width: 70%;
     margin: 2rem;
+    text-indent: 20px;
 }
+
 
 #aboutjackson img{
     justify-items: center;
-    display: flex;
     overflow: auto;
-    float: right;
+    width: 70%;
     margin: 2rem;
 }
 
@@ -222,6 +244,35 @@ h3{
     color: white;
     text-align: center;
     padding: 3rem;
+}
+
+#form{
+    padding-bottom: 3rem;
+}
+
+#form a{
+    display: block;
+    width: fit-content;      
+    text-decoration: none;
+    text-align: center;
+    color: var(--yellow);
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    border: 1px solid var(--org-red);
+    border-radius: 50px;
+}
+
+#form a:hover{
+    display: block;
+    width: fit-content;      
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: var(--org-red);
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    border: 1px solid var(--org-red);
+    border-radius: 50px;
 }
 
 h4{
