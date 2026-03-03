@@ -144,7 +144,7 @@ h2{
 #showgrid{
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     justify-items: center;
     max-width: 1200px;
@@ -155,6 +155,11 @@ h2{
 #showgrid img{
     width: 70%;
     height: auto;
+    border-radius: 50px;
+}
+
+#showgrid #mid-img{
+    border: dotted 3px var(--org-red);
 }
 
 #currentshow div{
@@ -185,26 +190,6 @@ h2{
     border: 1px solid var(--org-red);
     border-radius: 50px;
     transition: 300ms;
-}
-
-@media (max-width: 768px) {
-    #aboutjackson {
-        flex-direction: column;
-        padding: 2rem 1.5rem;
-        gap: 1.5rem;
-    }
-
-    #aboutjackson img {
-        width: 70%;
-        margin: 0 auto;
-        border-radius: 50%;
-        border: solid 10px var(--org-red);
-        justify-items: center;
-    }
-
-    #aboutjackson div {
-        width: 100%;
-    }
 }
 
 #aboutjackson {
@@ -240,6 +225,26 @@ h2{
     margin: 2rem;
     border-radius: 50%;
     border: solid 10px var(--org-red);
+}
+
+@media (max-width: 768px) {
+    #aboutjackson {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+        gap: 1.5rem;
+    }
+
+    #aboutjackson img {
+        width: 70%;
+        margin: 0 auto;
+        border-radius: 50%;
+        border: solid 10px var(--org-red);
+        justify-items: center;
+    }
+
+    #aboutjackson div {
+        width: 100%;
+    }
 }
 
 footer p{
@@ -340,9 +345,6 @@ h4{
     background-color:  darkgreen;
     border: 16px solid darkgreen;
 }
-
-
-
 
 #tgwdlm h3{
     margin: 5rem;
