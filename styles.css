@@ -144,7 +144,7 @@ h2{
 #showgrid{
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
     max-width: 1200px;
@@ -153,13 +153,14 @@ h2{
 }
 
 #showgrid img{
-    width: 70%;
+    width: 60%;
     height: auto;
     border-radius: 50px;
+    border: dotted 3px var(--org-red);
 }
 
-#showgrid #mid-img{
-    border: dotted 3px var(--org-red);
+#showgrid div p{
+    font-size: 1.5rem;
 }
 
 #currentshow div{
@@ -170,7 +171,8 @@ h2{
 }
 
 #currentshow a{
-    font-family: "Rye", serif;
+    font-family: "Niconne", serif;
+    font-size: 1.5rem;
     text-decoration: none;
     color: var(--dk-red);
     background-color: var(--yellow);
@@ -181,7 +183,7 @@ h2{
 }
 
 #currentshow div a:hover{
-    font-family: "Rye", serif;
+    font-family: "Niconne", serif;
     text-decoration: none;
     color: var(--yellow);
     background-color: var(--dk-red);
@@ -244,6 +246,14 @@ h2{
 
     #aboutjackson div {
         width: 100%;
+    }
+
+    #showgrid{
+        grid-template-columns: 1fr;
+    }
+
+    #showgrid div p{
+        font-size: 1.15rem;
     }
 }
 
