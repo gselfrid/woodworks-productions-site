@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="Woodworks Productions" content="woodworks productions theatre theater company in arizona typically doing shows at fusebox theater">
         <title>Woodworks Productions</title>
-        <link href="styles.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
 
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,46 +18,57 @@
 
     </head>
     <body>
+        <section id="h2tg">
+            <h2><a href="pastshows.html">Back to Shows</a></h2>
+        </section>
         <header>
-            <section id="h2tg">
-                <h2><a href="pastshows.html">Back to Shows</a></h2>
-            </section>
-            <section id="ttopg">
                 <h1>The Trail To Oregon</h1>
-            </section>
         </header>
         <main>
+            <section id="ttocast">
+                <h2>Cast</h2>
+                <div class="cast">
+                    <p>Father - Jonah Lopez</p>
+                    <p>Mother - Gwen Selfridge</p>
+                    <p>Daughter - Bailey Vesely</p>
+                    <p>Son - Sam Shaw</p>
+                    <p>Grandpa - Westley Armbrust</p>
+                    <p>McDoon - Jackson Wood</p>
+                </div>
+            </section>
             <section id="ttopics">
-                <section id="firstgrid">
-                    <img src="tto/ttofamop.jpg" alt="group">
-                    <img src="tto/ttospeed.jpg" alt="group">
-                    <img src="tto/ttogrind.jpg" alt="group">
-                    <img src="tto/ttomomndad.jpg" alt="group">
-                    <img src="tto/ttocrash.jpg" alt="group">
-                    <img src="tto/ttodrunkson.jpg" alt="group">
-                </section>
-                <section id="secondgrid">
-                    <img src="tto/ttofamop2.jpg" alt="group">
-                    <img src="tto/ttonewwagon.jpg" alt="group">
-                    <img src="tto/ttokidnap.jpg" alt="group">
-                    <img src="tto/ttomillion.jpg" alt="group">
-                    <img src="tto/ttodadalive.jpg" alt="group">
-                    <img src="tto/ttomccleat.jpg" alt="group">
-                </section>
-                <section id="thirdgrid">
-                    <img src="tto/ttoinde.jpg" alt="group">
-                    <img src="tto/ttoswim.jpg" alt="group">
-                    <img src="tto/ttomadeit.jpg" alt="group">
-                    <img src="tto/ttodaudoon.jpg" alt="group">
-                    <img src="tto/ttodysentary.jpg" alt="group">
-                    <img src="tto/ttogeneral.jpg" alt="group">
-                </section>
+                <h2>Gallery</h2>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="tto/ttofamop.jpg" alt="group">
+                        <img src="tto/ttospeed.jpg" alt="group">
+                        <img src="tto/ttomomndad.jpg" alt="group">
+                        <img src="tto/ttocrash.jpg" alt="group">
+                        <img src="tto/ttodrunkson.jpg" alt="group">
+                        <img src="tto/ttofamop2.jpg" alt="group">
+                        <img src="tto/ttokidnap.jpg" alt="group">
+                        <img src="tto/ttomillion.jpg" alt="group">
+                        <img src="tto/ttodadalive.jpg" alt="group">
+                        <img src="tto/ttomccleat.jpg" alt="group">
+                        <img src="tto/ttoswim.jpg" alt="group">
+                        <img src="tto/ttodaudoon.jpg" alt="group">
+                        <img src="tto/ttogeneral.jpg" alt="group">
+                    </div>
+                </div>
+                    <button class="prev" onclick="changeSlide(-1)">❮</button>
+                    <button class="next" onclick="changeSlide(1)">❯</button>
+                <script src="script.js"></script>
             </section>
+            <footer>
+                <section id="gwencred">
+                    <p>Website built and managed by Gwen Selfridge<br><br></p>
+                </section>
+                    <ul id="footernav">
+                        <li><a href="https://www.instagram.com/woodworks_productions/">Instagram</a></li>
+                        <li><a href="https://youtube.com/@woodworksproductions?si=BLuobkoQQsOmSWW2">Youtube</a></li>
+                        <li><a href="mailto:teamwoodworks2025@gmail.com">Email</a></li>
+                    </ul>
+            </footer>
         </main>
-        <footer>
-            <section id="h2tg">
-                <h2><a href="pastshows.html">Back to Shows</a></h2>
-            </section>
-        </footer>
     </body>
 </html>

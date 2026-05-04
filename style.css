@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Luckiest+Guy&family=Original+Surfer&display=swap');
+
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:root{
+    --magenta: #ae3ca2;
+    --lt-mag: #da94d4;
+    --dk-prp: #5044a6;
+    --prp: #8b6bc8;
+    --green: #72af78;
+    --midnight: #141e31;
+}
+
+img{
+    width: 80%;
+}
+
+body{
+    background-image: url(body-back-tall@2x.png);
+    height: 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--prp);
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 4px 4px 4px var(--midnight);
+    border-bottom: dotted 5px white; 
+    border-left: dotted 5px white; 
+    border-right: dotted 5px white; 
+    animation: header 1s ease-in;
+}
+
+header a{
+    font-size: 3rem;
+    text-decoration: none;
+    color: white;
+    text-shadow: 4px 4px 4px var(--dk-prp);
+    font-family: "Luckiest Guy", sans-serif;
+}
+
+header h1{
+    font-size: 3rem;
+    color: white;
+    text-shadow: 4px 4px 4px var(--dk-prp);
+    font-family: "Luckiest Guy", sans-serif;
+    animation: entrance 0.5s ease-out;
+}
+
+@keyframes entrance{
+    0% {transform:translate(0,-200px);}
+    50% {transform:rotate(-15deg);}
+    75% {transform:rotate(5deg);}
+}
+
+@keyframes riseUp{
+    0% {transform:translate(0,500px)}
+}
+
+header p{
+    font-size: 1.5rem;
+    font-family: "Luckiest Guy";
+    color: white;
+    text-shadow: 4px 4px 4px var(--dk-prp);
+    animation: entrance 0.75s ease-out;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1rem auto;
+}
+
+nav a{
+    text-align: center;
+    display: block;
+    background-color: var(--magenta);
+    width: 70%;
+    margin: 0.5rem auto;
+    padding: 0.75rem;
+    border-radius: 50px;
+    box-shadow: 4px 4px 4px var(--midnight);
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-family: "Luckiest Guy"; 
+    text-shadow: 4px 4px 4px var(--midnight);
+    animation: riseUp 0.5s ease-out;
+}
+
+h2{
+    font-family: "Luckiest Guy";
+}
+p, main a, footer a{
+    font-family: "Original Surfer";
+}
+
+main > section{
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 25px;
+    box-shadow: 4px 4px 15px var(--midnight);
+    margin: 2rem auto;
+}
+
+main section h2{
+    font-size: 2rem;
+    text-align: center;
+    margin: 1.5rem auto;
+    color: white;
+    width: 70%;
+    text-shadow: 4px 4px 4px var(--midnight);
+}
+
+main #currentshow{
+    background-color: var(--dk-prp);
+    animation: riseUp 0.75s ease-out;
+}
+
+#currentshow h2{
+    border-bottom: solid 5px var(--green);
+    animation: riseUp 0.85s ease-out;
+}
+
+#showgrid img{
+    margin: 1rem auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px var(--midnight);
+    animation: riseUp 0.95s ease-out;
+}
+
+#showgrid p{
+    text-align: center;
+    color: var(--midnight);
+    margin: 1.5rem;
+    color: white;
+    text-shadow: 5px 5px 7px var(--midnight);
+}
+
+#showgrid a{
+    background-color: var(--magenta);
+    padding: 1rem;
+    margin: 1rem auto;
+    display: block;
+    text-align: center;
+    width: 70%;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: white;
+    border: dotted 5px var(--lt-mag);
+    box-shadow: 4px 4px 4px var(--midnight); 
+}
+
+#aboutjackson{
+    background-color: var(--green);
+}
+
+#aboutjackson h2{
+    border-bottom: solid 5px var(--dk-prp);
+}
+
+#aboutjackson p{
+    text-indent: 1.5rem;
+    line-height: 1.75rem;
+    text-align: left;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 25px;
+    color: midnightblue;
+}
+
+.cite{
+    text-align: right;
+    font-size: 0.85rem;
+}
+
+#aboutjackson img{
+    display: block;
+    margin: 1rem auto;
+    border-radius: 50%;
+    border: dotted 4px var(--dk-prp);
+}
+
+#auditions{
+    background-color: var(--dk-prp);
+}
+
+#auditions h2{
+    border-bottom: solid 5px var(--green);
+    animation: riseUp 0.75s ease-out;
+}
+
+#tickets{
+    background-color: var(--dk-prp);
+    text-align: center;
+    animation: riseUp 0.5s ease-out;
+}
+
+#tickets h2{
+    border-bottom: solid 5px var(--green);
+    animation: riseUp 0.75s ease-out;
+}
+
+#tickets p{
+    margin: 1rem;
+    color: white;
+    animation: riseUp 0.85s ease-out;
+}
+
+#branching{
+    background-color: var(--green);
+    animation: riseUp 0.95s ease-out;
+}
+
+#branching h2{
+    border-bottom: solid 5px var(--dk-prp);
+    animation: riseUp 1s ease-out;
+}
+
+#branching p{
+    text-align: center;
+    margin: 1rem;
+    animation: riseUp 1.10s ease-out;
+}
+
+#creators div{
+    border-radius: 25px;
+    padding: 2rem;
+    margin: 1rem;
+    background-color: var(--magenta);
+    border: dotted 5px var(--lt-mag);
+    box-shadow: 4px 4px 4px var(--midnight);
+}
+
+#creators h3{
+    font-family: "Luckiest Guy";
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 4px 4px 4px var(--midnight);
+    text-align: center;
+}
+
+#creators p{
+    color: white;
+    text-shadow: 4px 4px 4px var(--midnight);
+}
+
+#form{
+    background-color: var(--green);
+}
+
+#form p{
+    line-height: 1.25rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+#form a{
+    width: 70%;
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--magenta);
+    padding: 1.5rem;
+    font-size: 1.15rem;
+    border-radius: 55px;
+    color: white;
+    border: dotted 5px var(--lt-mag);
+    box-shadow: 4px 4px 4px var(--midnight);
+}
+
+#twenty-six{
+    background-color: var(--dk-prp);
+    animation: riseUp 0.5s ease-out;
+}
+
+#twenty-six h2{
+    animation: riseUp 0.75s ease-out;
+}
+
+#twenty-six img{
+    display: block;
+    margin: auto;
+    animation: riseUp 0.85s ease-out;
+}
+
+#twenty-six a{
+    text-align: center;
+    text-decoration: none;
+}
+
+#twenty-six figcaption{
+    color: white;
+    margin: 1rem auto;
+    background-color: var(--magenta);
+    width: 70%;
+    display: block;
+    padding: 1rem;
+    border-radius: 50px;
+    border: dotted 5px var(--lt-mag);
+}
+
+#twenty-five{
+    background-color: var(--green);
+}
+
+#twenty-five img{
+    display: block;
+    margin: auto;
+}
+
+#twenty-five a{
+    text-align: center;
+    text-decoration: none;
+}
+
+#twenty-five figcaption{
+    color: white;
+    margin: 1rem auto;
+    background-color: var(--magenta);
+    width: 70%;
+    display: block;
+    padding: 1rem;
+    border-radius: 50px;
+    border: dotted 5px var(--lt-mag);
+}
+
+footer{
+    background-color: rgb(80, 68, 166, 0.5);
+    padding: 2rem;
+    text-align: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+#gwencred p{
+    color: white;
+    opacity: 75%;
+}
+
+#footernav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#footernav a{
+    background-color: var(--magenta);
+    display: block;
+    margin: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    opacity: 75%;
+    text-shadow: 4px 4px 4px var(--midnight);
+    box-shadow: 4px 4px 4px var(--midnight);
+}
+
+#h2tg{
+    background-color: var(--prp);
+    padding: 1rem;
+}
+
+#h2tg a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 4px 4px 4px var(--midnight);
+}
+
+#ttopics{
+    background-color: var(--magenta);
+}
+
+#tgwdcast{
+    background-color: var(--green);
+}
+
+#tgwdpics{
+    background-color: var(--green);
+}
+
+#ttopics img{
+    display: block;
+    margin: 1rem;
+    border-radius: 15px;
+}
+
+.carousel {
+    position: relative;
+    width: 112%; /* Adjust as needed */
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    max-width: 150%;
+    margin: auto;
+    display: block;
+}
+
+button {
+    position: absolute;
+    background-color: var(--lt-mag);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 15px;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+#ttocast{
+    background-color: var(--magenta);
+}
+
+.cast{
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.15rem;
+}

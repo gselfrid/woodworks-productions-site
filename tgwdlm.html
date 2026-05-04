@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="Woodworks Productions" content="woodworks productions theatre theater company in arizona typically doing shows at fusebox theater">
         <title>Woodworks Productions</title>
-        <link href="styles.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
 
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,43 +21,59 @@
         <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
     </head>
     <body>
+        <section id="h2tg">
+            <h2><a href="pastshows.html">Back to Shows</a></h2>
+        </section>
         <header>
-            <section id="h2tg">
-                <h2><a href="pastshows.html">Back to Shows</a></h2>
-            </section>
-            <section id="tgwdlmpg">
                 <h1>The Guy Who Didn't Like Musicals</h1>
-            </section>
         </header>
         <main>
-            <section id="tgwdlmpics">
-                <section id="firstgrid">
-                    <img src="tgwdlm/tgwdlmgroup.jpeg" alt="group">
-                    <img src="tgwdlm/tgwdlmgreenpeace.jpeg" alt="group">
-                    <img src="tgwdlm/tgwdlmcops.jpeg" alt="group">
-                    <img src="tgwdlm/tgwdlmjackandsam.jpeg" alt="group">
-                    <img src="tgwdlm/tgwdlmerin.jpeg" alt="group">
-                </section>
-                <section id="secondgrid">
-                    <img src="tgwdlm/tgwdlmgroup2.jpeg" alt="group">
-                    <img src="tgwdlm/tgwdlmfrontpg.jpeg" alt="group">
-                    <img src="tgwdlm/tgwdlmhomeless.jpeg" alt="group">
-                    <img src="tgwdlm/tgwdlmripjackson.jpeg" alt="group">
-                    <img src="tgwdlm/tgwdlmalec.jpeg" alt="group">
-                </section>
-                <section id="thirdgrid">
-                    <img src="tgwdlm/tgwdlmladeeda.jpeg" alt="group">
-                    <img src="tgwdlm/tgwdlmtodie.jpeg" alt="group">
-                    <img src="tgwdlm/tgwdlmjoe.jpeg" alt="group">
-                    <img src="tgwdlm/tgwdlmfelix.jpeg" alt="group">
-                    <img src="tgwdlm/tgwdlmgwendrink.jpeg" alt="group">
-                </section>
+            <section id="tgwdcast">
+                <h2>Cast</h2>
+                <div class="cast">
+                    <p>Paul - Jonah Lopez</p>
+                    <p>Emma - Sam Shaw</p>
+                    <p>Charlotte/Ensemble - Gwen Selfridge</p>
+                    <p>Sam/Ensemble - Joe Sullivan</p>
+                    <p>Alice/Ensemble - Erin Garner</p>
+                    <p>Hidgens/Ensemble - Felix Lopez</p>
+                    <p>Ted/Ensemble - Jackson Wood</p>
+                    <p>Bill/Ensemble - Alec Gordon</p>
+                </div>
             </section>
-        </main>
-        <footer>
-            <section id="h2tg">
-                <h2><a href="pastshows.html">Back to Shows</a></h2>
+            <section id="tgwdpics">
+                <h2>Gallery</h2>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="tgwdlm/tgwdlmgroup2.jpeg" alt="group">
+                        <img src="tgwdlm/tgwdlmgreenpeace.jpeg" alt="group">
+                        <img src="tgwdlm/tgwdlmcops.jpeg" alt="group">
+                        <img src="tgwdlm/tgwdlmjackandsam.jpeg" alt="group">
+                        <img src="tgwdlm/tgwdlmerin.jpeg" alt="group">
+                        <img src="tgwdlm/tgwdlmfrontpg.jpeg" alt="group">
+                        <img src="tgwdlm/tgwdlmhomeless.jpeg" alt="group">
+                        <img src="tgwdlm/tgwdlmripjackson.jpeg" alt="group">
+                        <img src="tgwdlm/tgwdlmalec.jpeg" alt="group">
+                        <img src="tgwdlm/tgwdlmladeeda.jpeg" alt="group">
+                        <img src="tgwdlm/tgwdlmtodie.jpeg" alt="group">
+                        <img src="tgwdlm/tgwdlmjoe.jpeg" alt="group">
+                        <img src="tgwdlm/tgwdlmfelix.jpeg" alt="group">
+                        <img src="tgwdlm/tgwdlmgwendrink.jpeg" alt="group">
+                    </div>
+                </div>
+                    <button class="prev" onclick="changeSlide(-1)">❮</button>
+                    <button class="next" onclick="changeSlide(1)">❯</button>
+                <script src="script.js"></script>
             </section>
-        </footer>
+            <footer>
+                <section id="gwencred">
+                    <p>Website built and managed by Gwen Selfridge<br><br></p>
+                </section>
+                    <ul id="footernav">
+                        <li><a href="https://www.instagram.com/woodworks_productions/">Instagram</a></li>
+                        <li><a href="https://youtube.com/@woodworksproductions?si=BLuobkoQQsOmSWW2">Youtube</a></li>
+                        <li><a href="mailto:teamwoodworks2025@gmail.com">Email</a></li>
+                    </ul>
+            </footer>
     </body>
 </html>
