@@ -63,6 +63,7 @@ img{
 }
 
 body{
+    background-color: var(--prp);
     background-image: url(body-back-tall@2x.png);
     height: 100%;
     background-repeat:no-repeat;
