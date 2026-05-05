@@ -97,10 +97,17 @@ header a{
     font-family: "Luckiest Guy", sans-serif;
 }
 
+header a:hover{
+    color: var(--lt-mag);
+    text-shadow: 4px 4px 4px var(--prp);
+}
+
+header a:active{
+    color: var(--dk-prp);
+    text-shadow: 4px 4px 4px white;
+}
+
 header h1{
-    font-size: 3rem;
-    color: white;
-    text-shadow: 4px 4px 4px var(--dk-prp);
     font-family: "Luckiest Guy", sans-serif;
     animation: entrance 0.5s ease-out;
 }
@@ -144,6 +151,19 @@ nav a{
     font-family: "Luckiest Guy"; 
     text-shadow: 4px 4px 4px var(--midnight);
     animation: riseUp 0.5s ease-out;
+    transition: 0.25s;
+}
+
+nav a:hover{
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: var(--lt-mag);
+    transition: 0.25s;
+}
+
+nav a:active{
+    text-shadow: 4px 4px 4px var(--lt-mag);
+    color: var(--dk-prp);
 }
 
 h2{
@@ -210,6 +230,19 @@ main #currentshow{
     color: white;
     border: dotted 5px var(--lt-mag);
     box-shadow: 4px 4px 4px var(--midnight); 
+}
+
+#showgrid a:hover{
+    transition: 0.5s;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--green);
+    border: solid 3px var(--magenta);
+}
+
+#showgrid a:active{
+    background-color: var(--dk-prp);
+    color: var(--green);
 }
 
 #aboutjackson{
@@ -331,6 +364,19 @@ main #currentshow{
     box-shadow: 4px 4px 4px var(--midnight);
 }
 
+#form a:hover{
+    transition: 0.5s;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--dk-prp);
+    border: solid 3px var(--magenta);
+}
+
+#form a:active{
+    background-color: var(--green);
+    color: var(--dk-prp);
+}
+
 #twenty-six{
     background-color: var(--dk-prp);
     animation: riseUp 0.5s ease-out;
@@ -418,6 +464,15 @@ footer{
     box-shadow: 4px 4px 4px var(--midnight);
 }
 
+#footernav a:hover{
+    background-color: var(--dk-prp);
+}
+
+#footernav a:active{
+    background-color: white;
+    color: var(--dk-prp);
+}
+
 #h2tg{
     background-color: var(--prp);
     padding: 1rem;
@@ -492,4 +547,77 @@ button {
     text-align: center;
     line-height: 2rem;
     font-size: 1.15rem;
+}
+
+@media screen and (min-width: 700px){
+
+    body{
+        background-color: var(--prp);
+        background-image: url(body-back.JPG);
+        height: 100%;
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-sizing: border-box;
+    }
+
+    nav ul{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    nav a{
+        padding: 1.25rem;
+    }
+
+    nav a:hover{
+        padding: 1.5rem;
+    }
+
+    img{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 900px){
+
+    header{
+        width: 800px;
+        margin: auto;
+    }
+
+    nav{
+        width: 800px;
+        margin: auto;
+    }
+
+    main section{
+        width: 800px;
+    }
+
+    #showgrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .about-grid div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #twenty-six img, #twenty-five img{
+        width: 40%;
+    }
+
+    #h2tg{
+        width: 820px;
+        margin: auto
+    }
+
+    #creators{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
