@@ -88,16 +88,9 @@ header{
     animation: header 1s ease-in;
 }
 
-header a{
-    text-decoration: none;
-    color: white;
-    text-shadow: 4px 4px 4px var(--dk-prp);
-    font-family: "Luckiest Guy", sans-serif;
-}
-
-header a:hover{
-    color: var(--lt-mag);
-    text-shadow: 4px 4px 4px var(--prp);
+header a:hover img{
+    width: 50%;
+    transition: 0.5s;
 }
 
 header a:active{
@@ -105,8 +98,8 @@ header a:active{
     text-shadow: 4px 4px 4px white;
 }
 
-header img{
-    width: 70%;
+header a img{
+    width: 60%;
     font-family: "Luckiest Guy", sans-serif;
     animation: entrance 0.5s ease-out;
 }
@@ -540,7 +533,7 @@ button {
     font-size: 1.15rem;
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 600px){
 
     body{
         background-color: var(--prp);
@@ -550,6 +543,10 @@ button {
         background-size: cover;
         background-position: center;
         box-sizing: border-box;
+    }
+
+    header a img{
+        width: 30%;
     }
 
     nav ul{
@@ -574,6 +571,10 @@ button {
     header{
         width: 800px;
         margin: auto;
+    }
+
+    header a img{
+        width: 40%;
     }
 
     nav{
