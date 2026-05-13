@@ -78,7 +78,6 @@ body{
 
 header{
     text-align: center;
-    padding: 1.5rem;
     background-color: var(--prp);
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -90,7 +89,6 @@ header{
 }
 
 header a{
-    font-size: 3rem;
     text-decoration: none;
     color: white;
     text-shadow: 4px 4px 4px var(--dk-prp);
@@ -107,7 +105,8 @@ header a:active{
     text-shadow: 4px 4px 4px white;
 }
 
-header h1{
+header img{
+    width: 70%;
     font-family: "Luckiest Guy", sans-serif;
     animation: entrance 0.5s ease-out;
 }
@@ -120,14 +119,6 @@ header h1{
 
 @keyframes riseUp{
     0% {transform:translate(0,500px)}
-}
-
-header p{
-    font-size: 1.5rem;
-    font-family: "Luckiest Guy";
-    color: white;
-    text-shadow: 4px 4px 4px var(--dk-prp);
-    animation: entrance 0.75s ease-out;
 }
 
 nav ul{
