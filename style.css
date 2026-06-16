@@ -88,6 +88,12 @@ header{
     animation: header 1s ease-in;
 }
 
+header p{
+    margin: 0 auto 0.75rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
 header a:hover img{
     width: 50%;
     transition: 0.5s;
