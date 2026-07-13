@@ -299,6 +299,42 @@ main #currentshow{
     animation: riseUp 0.85s ease-out;
 }
 
+#tickets img{
+    margin: 1rem auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px var(--midnight);
+    animation: riseUp 0.95s ease-out;
+}
+
+#tickets a{
+    background-color: var(--magenta);
+    padding: 1rem;
+    margin: 1rem auto;
+    display: block;
+    text-align: center;
+    width: 70%;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: white;
+    border: dotted 5px var(--lt-mag);
+    box-shadow: 4px 4px 4px var(--midnight); 
+}
+
+#tickets a:hover{
+    transition: 0.5s;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--green);
+    border: solid 3px var(--magenta);
+}
+
+#tickets a:active{
+    background-color: var(--dk-prp);
+    color: var(--green);
+}
+
 #branching{
     background-color: var(--green);
     animation: riseUp 0.95s ease-out;
